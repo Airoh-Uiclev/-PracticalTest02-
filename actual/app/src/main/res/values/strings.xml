@@ -6,4 +6,6 @@
     <string name="client">CLIENT</string>
     <string name="currency">Currency</string>
     <string name="request">Request</string>
+    <string name="address">Address</string>
+    <string name="client_port">Port</string>
 </resources>

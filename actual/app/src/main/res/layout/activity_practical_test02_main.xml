@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:text="@string/server"
             android:textSize="25sp"
+            android:layout_gravity="center"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -70,6 +71,41 @@
             android:text="@string/client"
             android:textStyle="bold"
             android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/client_address_edit_text"
+                    android:hint="@string/address"/>
+
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/client_port_edit_text"
+                    android:hint="@string/client_port"/>
+
+            </ScrollView>
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
